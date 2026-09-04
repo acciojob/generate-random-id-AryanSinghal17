@@ -4,13 +4,14 @@ function makeid(l) {
 	let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	
 	str += str.toLowerCase();
-	str+ = "123456789";
+	str += "123456789";
 
-	for(int i = 0;i<l;i++){
+	for(let i = 0;i<l;i++){
 		let idx = Math.floor(Math.random() * str.length);
 		res += str[idx];
 	}
 
+	
 	return res;
 }
 
